@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Car Details</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+      font-size: 28px;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    
+    .button {
+      display: inline-block;
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 20px;
+      border-radius: 4px;
+    }
+    
+    .my-img {
+      width: 500px; 
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+  <script>
+    function confirmBooking() {
+      var confirmation = confirm("Are you sure you want to book the car?");
+      if (confirmation) {
+        window.open("https://docs.google.com/forms/d/e/1FAIpQLScTVB55vxppSRByHW1evUWeobfOwsfAMA52zrPNzH3RAtBxng/viewform?usp=sf_link");
+      } else {
+        window.location.href = "https://www.renderforest.com/website-maker/1012408/lang/edit/home//#";
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Car Details</h1>
+
+  <img class="my-img" src="https://imgd.aeplcdn.com/0x0/n/cw/ec/27074/civic-exterior-right-front-three-quarter-148155.jpeg" />
+  <table>
+    <tr>
+      <th>Car ID</th>
+      <th>Vehicle Model</th>
+      <th>Vehicle Location</th>
+      <th>Year of the Car</th>
+      <th>Engine Capacity</th>
+      <th>Rental Terms</th>
+    </tr>
+    <tr>
+      <td>233</td>
+      <td>Honda Civic</td>
+      <td>Azenes 8</td>
+      <td>2020</td>
+      <td>2.5L</td>
+      <td>The minimum age requirement for renting a car is 21 years old. Additional fees may apply for drivers under 25 years old.
+A valid driver's license and a major credit card are required for renting a car. Debit cards or cash may not be accepted.
+The rental car must be returned with a full tank of fuel. Failure to do so may result in refueling charges.</td>
+    </tr>
+    <!-- Add more car details rows as needed -->
+  </table>
+  
+  <div style="text-align: center; margin-top: 20px;">
+    <button class="button" onclick="confirmBooking()">Book Now</button>
+  </div>
+</body>
+</html>
